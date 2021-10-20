@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import com.example.gym.R
 import kotlinx.android.synthetic.main.fragment_third_hello.*
 
@@ -43,13 +44,16 @@ class ThirdHello : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        if (gender != -1 ){
-            when(gender){
-                0 -> human_imageView.setBackgroundResource(R.drawable.woman)
-                1 -> human_imageView.setBackgroundResource(R.drawable.man)
+        val view = layoutInflater.inflate(R.layout.fragment_third_hello, container, false)
+        val humanImageView = view.findViewById<ImageView>(R.id.human_imageView)
+
+        if (gender != -1) {
+            when (gender) {
+                0 -> humanImageView.setBackgroundResource(R.drawable.woman)
+                1 -> humanImageView.setBackgroundResource(R.drawable.man)
             }
         }
-        return inflater.inflate(R.layout.fragment_third_hello, container, false)
+        return view
     }
 
     override fun onStart() {
@@ -90,6 +94,8 @@ class ThirdHello : Fragment() {
     }
 
     companion object {
-        fun newInstance(): ThirdHello = ThirdHello()
+        fun newInstance(gender: Int): ThirdHello = ThirdHello().apply{
+            arguments = Bundle().apply { putInt(KEY_GENDER, gender) }
+        }
     }
 }

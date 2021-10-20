@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
@@ -64,13 +64,15 @@
             android:layout_height="60dp"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
+            android:textColorHint="#AAAAA9"
+            android:textColor="#AAAAA9"
             android:hint="Height"
             android:textSize="24sp"
             android:background="@drawable/launch_button_off"/>
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout2"
+        android:id="@+id/frameLayout6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
@@ -89,6 +91,8 @@
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
             android:hint="Weight"
+            android:textColorHint="#AAAAA9"
+            android:textColor="#AAAAA9"
             android:textSize="24sp"
             android:background="@drawable/launch_button_off"/>
     </FrameLayout>

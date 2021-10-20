@@ -23,15 +23,10 @@ class LaunchActivity : AppCompatActivity(),
                        FourthHello.Callbacks,
                        FifthHello.Callbacks{
 
-    val activityScope = CoroutineScope(Dispatchers.Main)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launch)
-
-        activityScope.launch {
-            delay(3000)
-
             val currentFragment = supportFragmentManager.findFragmentById(R.id.container_fragment)
             if (currentFragment == null ){
                 val fragment = FirstHello.newInstance()
@@ -39,8 +34,6 @@ class LaunchActivity : AppCompatActivity(),
                     add(R.id.container_fragment, fragment)
                 }
             }
-        }
-
     }
 
     override fun onFirstHello() {
@@ -49,7 +42,7 @@ class LaunchActivity : AppCompatActivity(),
     }
 
     override fun onSecondHello(gender: Int) {
-        val fragment = ThirdHello.newInstance()
+        val fragment = ThirdHello.newInstance(gender)
         changeFragments(fragment)
     }
 
