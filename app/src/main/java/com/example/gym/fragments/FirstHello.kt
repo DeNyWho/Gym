@@ -11,25 +11,16 @@ import android.view.ViewGroup
 import com.example.gym.R
 import kotlinx.android.synthetic.main.fragment_first_hello.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 private const val TAG = "FirstHelloCall"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [FirstHello.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FirstHello : Fragment() {
     interface Callbacks {
         fun onFirstHello()
     }
 
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
     private var callbacks: Callbacks? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
