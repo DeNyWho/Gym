@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
@@ -93,7 +93,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout2"
+        android:id="@+id/frameLayout6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"

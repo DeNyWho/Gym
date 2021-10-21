@@ -31,6 +31,15 @@ class SecondHello : Fragment() {
         callbacks = context as Callbacks
     }
 
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_second_hello, container, false)
+    }
+
     override fun onStart() {
         super.onStart()
         female_imageButton.setOnClickListener {
@@ -64,18 +73,9 @@ class SecondHello : Fragment() {
         Log.i(TAG, "gender = $gender")
     }
 
-
     override fun onDetach() {
         super.onDetach()
         callbacks = null
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second_hello, container, false)
     }
 
     companion object {

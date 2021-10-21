@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/drawable/button_no_stroke.xml" value="0.403125" />
+        <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/drawable/button_no_stroke_off.xml" value="0.403125" />
+        <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/drawable/button_no_stroke_on.xml" value="0.403125" />
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/drawable/edittext.xml" value="0.403125" />
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/drawable/icon_app_1024x1024.xml" value="0.33055555555555555" />
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/drawable/launch_button.xml" value="0.403125" />
@@ -17,7 +20,8 @@
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/layout/fragment_fourth_hello.xml" value="0.33" />
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/layout/fragment_second_hello.xml" value="0.1" />
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/layout/fragment_sing_in.xml" value="0.33" />
-        <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/layout/fragment_third_hello.xml" value="0.33" />
+        <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/layout/fragment_sing_up.xml" value="0.33" />
+        <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/layout/fragment_third_hello.xml" value="0.5980707395498392" />
         <entry key="..\:/Users/denis/AndroidStudioProjects/Gym/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.33055555555555555" />
       </map>
     </option>
